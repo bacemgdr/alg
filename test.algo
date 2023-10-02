@@ -1,0 +1,24 @@
+ALGORITHM algorithm_Test
+VAR
+Ph : STRING ;
+i,cptw,cptv:=0 : INTEGER   ;
+BEGIN
+read (ph);
+REPEAT
+i:=i+1
+SWITCH (ph[i]) 
+    case  ph [i]:='' cptw:= cptw+1 ; break
+       case 
+        if(ph[i] == 'a' || ph[i] == 'e' || ph[i] == 'i' || ph[i] == 'o' || ph[i] == 'u' || ph[i] == 'y' ||
+         ph[i] == 'A' || ph[i] == 'E' || ph[i] == 'I' || ph[i] == 'O' || ph[i] == 'U' || ph[i] == 'Y')  
+         cptv := cptv+1 ;
+    default : i:= i+1;
+    END_SWITCH
+    
+UNTIL (ph[i] :='.');
+cptw:= cptw+1 ;
+
+    printf("\n la longuer de phrase est %d .", i);
+       printf("\n  le nombre de voyelle est %d .", cptv);
+          printf("\n % le nombre de mot est %d .", cptw);
+END
