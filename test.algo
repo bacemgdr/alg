@@ -1,24 +1,38 @@
 ALGORITHM algorithm_Test
 VAR
 Ph : STRING ;
-i,cptw,cptv:=0 : INTEGER   ;
-BEGIN
-read (ph);
-REPEAT
-i:=i+1
-SWITCH (ph[i]) 
-    case  ph [i]:='' cptw:= cptw+1 ; break
-       case 
-        if(ph[i] == 'a' || ph[i] == 'e' || ph[i] == 'i' || ph[i] == 'o' || ph[i] == 'u' || ph[i] == 'y' ||
-         ph[i] == 'A' || ph[i] == 'E' || ph[i] == 'I' || ph[i] == 'O' || ph[i] == 'U' || ph[i] == 'Y')  
-         cptv := cptv+1 ;
-    default : i:= i+1;
-    END_SWITCH
-    
-UNTIL (ph[i] :='.');
-cptw:= cptw+1 ;
+i,j,k,cptl,cptw,cptv:=0 : INTEGER   ;
 
-    printf("\n la longuer de phrase est %d .", i);
-       printf("\n  le nombre de voyelle est %d .", cptv);
-          printf("\n % le nombre de mot est %d .", cptw);
+
+BEGIN
+
+read (ph);
+
+
+     WHILE (ph[i] <> ".") DO
+     cptl := cptl+1
+     END_WHILE
+
+   WHILE (j < cptl ) DO
+       IF (ph[i] = " "n) THEN
+       cptw := cptw +1 ;
+    END_IF
+    j:= j+1 ;
+END_WHILE
+
+
+WHILE (k < ) DO
+    IF (ph[i] == 'a' || ph[i] == 'e' || ph[i] == 'i' || ph[i] == 'o' || ph[i] == 'u' || ph[i] == 'y' ||
+         ph[i] == 'A' || ph[i] == 'E' || ph[i] == 'I' || ph[i] == 'O' || ph[i] == 'U' || ph[i] == 'Y') THEN
+        cptv := cptv+1
+    END_IF
+     k := k+1 ;
+
+END_WHILE
+
+    write("\n la longuer de phrase est %d .", cptl);
+       write("\n  le nombre de voyelle est %d .", cptv);
+          write("\n % le nombre de mot est %d .", cptw);
+
+
 END
