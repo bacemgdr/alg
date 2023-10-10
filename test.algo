@@ -30,9 +30,9 @@ WHILE (k < ) DO
 
 END_WHILE
 
-    write("\n la longuer de phrase est %d .", cptl);
-       write("\n  le nombre de voyelle est %d .", cptv);
-          write("\n % le nombre de mot est %d .", cptw);
+    write('la longuer de phrase est: ', cptl);
+       write(' le nombre de voyelle est : ', cptv);
+          write('le nombre de mot est : ', cptw);
 
 
 END
