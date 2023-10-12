@@ -1,20 +1,20 @@
 ALGORITHM algorithm_Test
-VAR
+VAR                 // Declaration du variables
 Ph : STRING ;
 i,j,k,cptl,cptw,cptv:=0 : INTEGER   ;
 
 
 BEGIN
 
-read (ph);
+read (ph); 
 
 
-     WHILE (ph[i] <> ".") DO
+     WHILE (ph[i] <> ".") DO    // parcourire du phrase tantque n'est pas finit
      cptl := cptl+1
      END_WHILE
 
    WHILE (j < cptl ) DO
-       IF (ph[i] = " "n) THEN
+       IF (ph[i] = " ") THEN    //tant que on trouve espace , le compteur de mot augment +1 
        cptw := cptw +1 ;
     END_IF
     j:= j+1 ;
@@ -27,9 +27,10 @@ WHILE (k < ) DO
         cptv := cptv+1
     END_IF
      k := k+1 ;
-
+                                            // recherche de voyelle est le compter
 END_WHILE
 
+                // les resultats finaux afficher au utilisateur  
     write('la longuer de phrase est: ', cptl);
        write(' le nombre de voyelle est : ', cptv);
           write('le nombre de mot est : ', cptw);
